@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-springboot1": {
+    "angular-springboot": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-springboot1",
+            "outputPath": "dist/angular-springboot",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -68,10 +68,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "angular-springboot1:build:production"
+              "browserTarget": "angular-springboot:build:production"
             },
             "development": {
-              "browserTarget": "angular-springboot1:build:development"
+              "browserTarget": "angular-springboot:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -79,7 +79,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-springboot1:build"
+            "browserTarget": "angular-springboot:build"
           }
         },
         "test": {
@@ -102,5 +102,5 @@
       }
     }
   },
-  "defaultProject": "angular-springboot1"
+  "defaultProject": "angular-springboot"
 }
